@@ -7,7 +7,7 @@ const rl = readline.createInterface({
     prompt: question[0]
 })
 rl.prompt();
-rl.on('line', (data) => {
+rl.on('line', data => {
     console.log('hello ' + data);
     index += 1;
     if(question[index]) {
